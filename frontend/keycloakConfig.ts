@@ -1,8 +1,7 @@
 ﻿const keycloakConfig = {
     url: 'https://localhost:8080/auth',
     realm: 'reports-realm',
-    clientId: 'reports-frontend',
-    pkceMethod: 'S256', // Включаем PKCE
+    clientId: 'reports-frontend'
 };
 
 export default keycloakConfig
