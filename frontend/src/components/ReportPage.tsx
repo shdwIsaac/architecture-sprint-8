@@ -5,7 +5,7 @@ const ReportPage: React.FC = () => {
   const { keycloak, initialized } = useKeycloak();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
+  
   const downloadReport = async () => {
     if (!keycloak?.token) {
       setError('Not authenticated');
